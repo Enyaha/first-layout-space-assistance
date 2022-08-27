@@ -1,0 +1,78 @@
+.feedback {
+    padding: 70px 0 40px 0;
+    background-color: $main-color;
+    text-align: center;
+    h2 {
+        display: inline;
+    }
+    &__form {
+        margin: 0 auto;
+        width: 1000px;
+    }
+    &__contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;;
+        grid-template-rows: repeat(3, 30px);
+        gap: 50px;
+        margin-top: 45px;
+        input {
+            width: 100%;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 27px;
+            color: #fff;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            letter-spacing: 0.1em;
+            &:focus ~ span, &:valid ~ span {
+                transform: translateY(-20px);
+                font-size: 12px;
+            }
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus {
+        -webkit-text-fill-color: #fff;
+        -webkit-box-shadow: 0 0 0px 1000px #1A3D8A inset;
+        transition: background-color 5000s ease-in-out 0s;
+        }
+        span {
+            position: absolute;
+            left: 0;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 27px;
+            color: #fff;
+            transition: all .5s;
+            pointer-events: none;
+        }
+    }
+    &__box {
+        position: relative;
+    }
+    &__box:nth-child(4), &__box:nth-child(5) {
+            grid-column: 1/4;
+    }
+    &__btn {
+        margin-top: 50px;
+    }
+    &__info, &__link {
+        margin-top: 18px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 25px;
+        color: #fff;
+    }
+    &__link {
+        text-decoration-line: underline;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+    &__status {
+        margin-top: 20px;
+        color: $secondary-color;
+    }
+}

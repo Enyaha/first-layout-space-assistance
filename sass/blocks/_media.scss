@@ -1,0 +1,666 @@
+@media (max-width: 1200px) {
+    .header {
+        padding: 0 60px 0 60px;
+    }
+    .container {
+        max-width: 960px;
+    }
+    .menu {
+        &__list {
+            width: 350px;
+        }
+        &__link {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+    .prove {
+        &__block {
+            padding-left: 35px;
+        }
+    }
+    .subtitle {
+        width: 100%;
+    }
+    .cases {
+        &__items {
+            grid-template-columns: repeat(auto-fit, 229px);
+        }
+    }
+    .examples {
+        &__slider {
+            width: 300px;
+        }
+        &__slides {
+            width: 1200px;
+        }
+        &__slide {
+            width: 300px;
+        }
+        &__block {
+            width: 518px;
+        }
+        &__task {
+            width: 2072px;
+            &-item {
+                width: 518px;
+            }
+        }
+        &__nav {
+            margin-top: 50px;
+        }
+        &__decisions {
+            margin: 20px 0 50px 0;
+        }
+        &__decision {
+            width: 2072px;
+            &-item {
+                width: 518px;
+            }
+        }
+        &__img {
+            width: 300px;
+        }
+    }
+
+    .help {
+        &__items {
+            grid-template-columns: repeat(2, 440px);
+            column-gap: 80px;
+        }
+    }
+    .rates {
+        &__item {
+            width: 300px;
+        }
+        &__descr {
+            margin: 20px 5px 0 5px;
+        }
+    }
+    .choice {
+        &__wrapper {
+            column-gap: 30px;
+            row-gap: 38px;
+        }
+        &__item {
+            width: 465px;
+            grid-template-columns: 108px 337px;
+        }
+    }
+    .feedback {
+        &__form {
+            width: 960px;
+        }
+    }
+    .footer {
+        &__phone {
+            flex-direction: column;
+            width: 250px;
+        }
+        &__adress {
+            width: 270px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        &__contact {
+            margin-right: 60px;
+        }
+        &__handset {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .container {
+        max-width: 730px;
+    }
+    .prove {
+        position: relative;
+        background: url(../img/main_bg.svg) no-repeat 40%/cover;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100px;
+        width: 350px;
+        height: 100vh;
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .4s;
+        &.active {
+            right: 0;
+            visibility: visible;
+            opacity: 1;
+        }
+        &__block {
+            display: block;
+            height: 100vh;
+            transition: all .6s;
+            background-color: $secondary-color;
+            z-index: 10;
+        }
+        &__list {
+            display: block;
+            padding: 100px 100px 0 0;
+            text-align: right;
+            :hover {
+                color: $main-color;
+            }
+            a {
+                font-size: 20px;
+            }
+        }
+        &__close {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            cursor: pointer;
+        }
+        &__overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $main-color;
+            opacity: .80;
+            z-index: -1;
+        }
+    }
+
+    .hamburger {
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 21px;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: $secondary-color;
+        }
+    }
+    .cases {
+        &__items {
+            column-gap: 100px;
+        }
+    }
+    .examples {
+        &__nav {
+            margin-top: 310px;
+        }
+        &__block {
+            width: 300px;
+        }
+        &__title {
+            font-size: 17px;
+        }
+        &__tasks{
+            width: 300px;
+            max-height: none;
+        }
+        &__task {
+            width: 1200px;
+            &-item {
+                width: 300px;
+            }
+        }
+        &__decisions {
+            margin: 20px 0 20px 0;
+        }
+        &__decision {
+            width: 1200px;
+            margin: 20px 0 0 0;
+        }
+        &__img {
+            width: 300px;
+            margin-top: 60px;
+        }
+    }
+    .help {
+        padding: 50px 0 50px 0;
+        &__items {
+            grid-template-columns: repeat(2, 350px);
+            column-gap: 30px;
+        }
+    }
+    .order {
+        &__info {
+            width: 280px;
+            margin-top: 120px;
+        }
+        &__steps {
+            width: 400px;
+            margin-top: 70px;
+            gap: 8px;
+        }
+        &__left {
+            align-self: flex-end;
+            background: linear-gradient(270deg, #1A3D8A 0%, #1D4396 100%),#1a3d8a;
+            box-shadow: 0px 0px 40px rgb(26 61 138 / 20%);
+            &::before {
+                top: 50%;
+                left: -8px;
+            }
+        }
+        &__rings {
+            left: 30px;
+            height: 426px;
+        }
+    }
+    .rates {
+        padding: 30px 0;
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-top: 30px;
+        }
+    }
+    .service {
+        min-height: 450px;
+        padding: 30px;
+        &__block {
+            width: 340px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+        img {
+            height: 300px;
+        }
+    }
+    .choice {
+        padding-top: 30px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+        }
+    }
+    .feedback {
+        padding: 30px;
+        &__form {
+            width: 720px;
+        }
+    }
+    .footer {
+        &__adress {
+            width: 220px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .container {
+        width: 448px;
+        .examples__link {
+            display: block;
+            text-align: center;
+        }
+    }
+    .header {
+        position: relative;
+        padding: 0 65px 0 20px;
+    }
+    .prove {
+        background: url(../img/main_bg.svg) no-repeat 60%/cover;
+        &__block {
+            padding: 50px 0 0 0;
+        }
+    }
+    .cases {
+        &__items {
+            grid-template-columns: repeat(2, 214px);
+            column-gap: 20px;
+        }
+    }
+    .examples {
+        padding: 30px 0 32px 0;
+        &__nav {
+            display: none;
+        }
+        &__cases {
+            display: block;
+            margin: 30px 0 20px 0;
+            padding: 16px 16px 40px 16px;
+        }
+        &__title {
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        &__block {
+            width: 416px;
+        }
+        &__tasks {
+            width: 416px;
+            margin: 12px 0 20px 0;
+        }
+        &__task {
+            width: 1664px;
+            &-item {
+                width: 416px;
+                font-size: 16px;
+            }
+        }
+        &__decisions {
+            width: 416px;
+        }
+        &__decision {
+            width: 1664px;
+            &-item {
+                width: 416px;
+                font-size: 14px;
+            }
+        }
+        &__circles {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+            margin: 0 auto;
+        }
+        &__circle {
+            width: 16px;
+            height: 16px;
+            margin-bottom: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            &-active {
+                background-color: #fff;
+                transition: all .3s;
+            }
+        }
+    }
+    .help {
+        padding: 50px 0 50px 0;
+        &__items {
+            grid-template-columns: repeat(1, 448px);
+        }
+        &__item {
+            width: 380px;
+        }
+    }
+    .order {
+        &__info {
+            width: 210px;
+            height: 300px;
+            margin-top: 80px;
+        }
+        &__steps {
+            width: 200px;
+        }
+        &__item {
+            width: 200px;
+            padding: 10px 15px 10px 34px;
+        }
+        &__title {
+            font-size: 16px;
+            line-height: none;
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: none;
+        }
+        &__rings {
+            left: -30px;
+            top: 39px;
+            width: 15px;
+            height: 414px;
+            opacity: .4;
+            &::before {
+                width: 1px;
+            }
+        }
+        &__ring {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #fff;
+            span {
+                width: 4px;
+                height: 4px;
+            }
+        }
+        .btn_w250 {
+            width: 200px;
+        }
+    }
+    .rates {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+    .service {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__descr {
+            width: 300px;
+        }
+        &__btn {
+            width: 250px;
+        }
+        img {
+            margin-top: 50px;
+        }
+    }
+    .choice {
+        &__item {
+            width: 448px;
+            grid-template-columns: 108px 330px;
+        }
+    }
+    .questions {
+        &__title {
+            width: 300px;
+        }
+    }
+    .feedback {
+        &__form {
+            width: 420px;
+        }
+        &__contacts {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 30px);
+            span {
+                font-size: 13px;
+            }
+        }
+        &__box:nth-child(4), &__box:nth-child(5) {
+            grid-column: 1/1;
+        }
+    }
+    .footer {
+        padding: 57px 0 0 0;
+        &__contacts {
+            flex-direction: column-reverse;
+        }
+        &__adress {
+            width: 300px;
+            text-align: center;
+        }
+        &__mail {
+            margin-top: 30px;
+        }
+        &__phone {
+            margin-top: 30px;
+        }
+        &__info {
+            flex-direction: column-reverse;
+            margin-top: 60px;
+        }
+        &__logo {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .header {
+        height: 110px;
+        padding: 0 10px 0 10px;
+        &__title {
+            font-size: 9px;
+        }
+        &__prove {
+            width: 100%;
+            flex-direction: column;
+        }
+        &__contact {
+            margin-right: 0;
+        }
+    }
+    .prove {
+        min-height: 400px;
+        background: url(../img/main_bg.svg) no-repeat 34%/cover;
+        &__block {
+            width: 100%;
+            padding: 50px 20px 50px 20px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+    }
+    .menu {
+        width: 230px;
+        &__list {
+            width: 290px;
+        }
+    }
+    .cases {
+        padding: 50px 0 50px 0;
+        &__items {
+            grid-template-columns: repeat(1, 220px);
+        }
+    }
+    .examples {
+        padding: 30px 0 32px 0;
+        &__cases {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px 0 20px 0;
+        }
+        &__slider, &__slide {
+            width: 268px;
+        }
+        &__slides {
+            width: 1072px;
+        }
+        &__img {
+            width: 268px;
+            img {
+                width: 100%;
+            }
+        }
+        &__block, &__tasks {
+            width: 288px;
+        }
+        &__task, &__decision {
+            width: 1152px;
+            &-item {
+                width: 288px;
+            }   
+        }
+        &__decisions {
+            width: 288px;
+        }
+    }
+    .help {
+        &__items {
+            grid-template-columns: repeat(1, 300px);
+        }
+        &__item {
+            width: 300px;
+        }
+    }
+    .order {
+        padding-top: 30px;
+        &__block {
+            display: block;
+        }
+        &__info {
+            width: 300px;
+            margin-top: 0;
+        }
+        &__steps {
+            width: 300px;
+            height: 430px;
+        }
+        &__item {
+            width: 250px;
+            height: 74px;
+        }
+        &__rings {
+            top: 29px;
+            left: 18px;
+            height: 343px;
+            &::before {
+                top: -50px;
+                height: 200px;
+            }
+        }
+    }
+    .service {
+        &__block {
+            width: 300px;
+        }
+        img {
+            height: 240px;
+        }
+    }
+    .choice {
+        &__item {
+            width: 300px;
+            grid-template-columns: 88px 202px;
+            gap: 10px;
+        }
+        &__img {
+            width: 88px;
+            height: 80px;
+        }
+    }
+    .questions {
+        &__title {
+            width: 190px;
+        }
+        &__text, &__list {
+            padding-right: 20px;
+        }
+    }
+    .feedback {
+        &__form {
+            width: 260px;
+        }
+        &__contacts {
+            span {
+                font-size: 8px;
+            }
+            input {
+                font-size: 14px;
+                &:focus ~ span, &:valid ~ span {
+                    font-size: 7px;
+                }
+            }
+        }
+    }
+}

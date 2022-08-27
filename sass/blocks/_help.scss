@@ -1,0 +1,25 @@
+.help {
+    min-height: 545px;
+    padding: 80px 0 70px 0;
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 320px);
+        grid-template-rows: repeat(2, 110px);
+        column-gap: 120px;
+        row-gap: 40px;
+        margin-top: 50px;
+
+    }
+    &__item {
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        width: 108px;
+    }
+    &__text {
+        width: 182px;
+    }
+}

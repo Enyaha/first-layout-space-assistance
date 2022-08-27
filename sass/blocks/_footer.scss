@@ -1,0 +1,96 @@
+.footer {
+    padding: 57px 0 95px 0;
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 470px;
+    }
+    &__num {
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 45px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        &:hover {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+    &__mail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 197px;
+        img {
+            width: 36px;
+        }
+    }
+    &__email {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 45px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        &:hover {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+    &__adress {
+        width: 305px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 85px;
+    }
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 248px;
+        img {
+            width: 102px;
+        }
+    }
+    &__text {
+        width: 128px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #212121;
+        opacity: 0.7;
+    }
+    &__name {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 45px;
+        color: #212121;
+        opacity: 0.7;
+    }
+    &__link {
+        width: 197px;
+        a {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 45px;
+            color: #212121;
+            opacity: 0.7;
+            &:hover {
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

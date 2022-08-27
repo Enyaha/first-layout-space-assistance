@@ -1,0 +1,65 @@
+.rates {
+    min-height: 782px;
+    padding: 70px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 346px;
+        height: 406px;
+        padding: 50px 0;
+        box-shadow: 0px 0px 40px rgba(26, 61, 138, 0.3);
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 56px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+    &__descr {
+        margin: 20px 50px 0 50px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 27px;
+        text-align: center;
+    }
+    &__price {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 27px;
+        text-align: center;
+    }
+    &__btn {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 21px;
+    }
+    &__contract {
+        margin-top: 30px;
+        span {
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 27px;
+        }
+    }
+    &__link {
+        width: 20px;
+        margin-left: 10px;
+    }
+}
